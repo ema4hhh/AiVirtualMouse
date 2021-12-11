@@ -16,7 +16,7 @@ with mp_hands.Hands(
     if ret == False:
       break
     
-    height, witdh, _ = frame.shape
+    height, width, _ = frame.shape
     frame = cv2.flip(frame, 1)
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     
